@@ -14,7 +14,10 @@ const assertEqual = function(actual, expected) {
 };
 
 // TEST CODE
-const head = 
+const head = function(arr) {
+    return arr.shift(1);
+  };
+  
 assertEqual(head([5,6,7]), 5);
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
 

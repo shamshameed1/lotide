@@ -12,9 +12,9 @@ const assertEqual = function(actual, expected) {
 };
 
 // TEST CODE
-// assertEqual("Lighthouse Labs", "Bootcamp");
-// assertEqual(1, 1);
-// assertEqual(5, -3);
+assertEqual("Lighthouse Labs", "Bootcamp");
+assertEqual(1, 1);
+assertEqual(5, -3);
 
 function eqArrays (arr1, arr2) {
     if (arr1 === arr2) {
