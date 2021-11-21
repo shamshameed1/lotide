@@ -50,4 +50,6 @@ const findKey = function(object, callback) {
   "elBulli":   { stars: 3 },
   "Ora":       { stars: 2 },
   "Akelarre":  { stars: 3 }
-}, x => x.stars === 5));
+}, x => x.stars === 5)); // => undefined
+
+//
