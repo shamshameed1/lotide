@@ -28,8 +28,7 @@ const assertArraysEqual = function(actual, expected) {
     for (let mid = 0; mid < (array.length - (array.length - 1)); mid++) {
       
       if (array.length > 2 && array.length % 2 === 0 ) {
-          midArr.splice(0, 0, array[midNum]);
-          midArr.splice(1, 0, array[midNum + 1]); 
+        midArr.splice(0, 0, array[midNum - 1], array[midNum]); 
     
       } else if (array.length > 2 && array.length % 2 !== 0) {
          midArr.push(array[midNum]); 
