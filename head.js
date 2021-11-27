@@ -12,7 +12,7 @@ const assertEqual = require('./assertEqual');
 //     }
 
 // };
-
+//
 // TEST CODE
 const head = function(arr) {
     return arr.shift(1);
