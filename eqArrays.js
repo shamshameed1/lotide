@@ -1,15 +1,17 @@
-const assertEqual = function(actual, expected) {
-    if (actual === expected) {
-        console.log(`😄😄 Assertion Passed: "${actual}" === "${expected}"`);
-        return true;
-    }
+const assertEqual = require('./assertEqual');
 
-    else {
-        console.log(`🥲 🥲 Assertion Failed: "${actual}" !== "${expected}"`);
-        return false;
-    }
+// const assertEqual = function(actual, expected) {
+//     if (actual === expected) {
+//         console.log(`😄😄 Assertion Passed: "${actual}" === "${expected}"`);
+//         return true;
+//     }
 
-};
+//     else {
+//         console.log(`🥲 🥲 Assertion Failed: "${actual}" !== "${expected}"`);
+//         return false;
+//     }
+
+// };
 
 // TEST CODE
 assertEqual("Lighthouse Labs", "Bootcamp");
@@ -24,7 +26,9 @@ function eqArrays (arr1, arr2) {
         return false;
     }
 }
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false);
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true);
-assertEqual(eqArrays(["1", "2", "3"], ["3", "2", "1"]), false);
+// assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
+// assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false);
+// assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true);
+// assertEqual(eqArrays(["1", "2", "3"], ["3", "2", "1"]), false);
+
+module.exports = eqArrays;
