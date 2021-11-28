@@ -21,8 +21,7 @@ const assertEqual = require('./assertEqual');
 function eqArrays (arr1, arr2) {
     if (arr1 === arr2) {
         return true;
-    }
-    else {
+    } else if (arr1 !== arr2) {
         return false;
     }
 }
