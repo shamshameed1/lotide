@@ -3,7 +3,7 @@ const eqArrays = require('../eqArrays');
 
 describe("#eqArrays", () => {
   it("returns true for ([1, 2, 3] === [1, 2, 3])", () => {
-    assert.isFalse(eqArrays([1, 2, 3], [1, 2, 3]));
+    assert.isFalse(eqArrays([1, 2, 3], [1, 2, 3])); // I don't know why it passes when it's 'isFalse' and not 'isTrue'...ask instructor
   });
 
   it("returns false for ([1, 2, 3] !== [3, 2, 1])", () => {
@@ -11,7 +11,7 @@ describe("#eqArrays", () => {
   });
 
   it("returns true for (['1', '2', '3'] === ['1', '2', '3'])", () => {
-    assert.isFalse(eqArrays(["1", "2", "3"], ["1", "2", "3"])); 
+    assert.isFalse(eqArrays(["1", "2", "3"], ["1", "2", "3"])); // I don't know why it passes when it's 'isFalse' and not 'isTrue'...ask instructor
   });
 
   it("returns false for (['1', '2', '3'] !== ['3', '2', '1'])", () => {
