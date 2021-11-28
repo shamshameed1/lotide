@@ -1,4 +1,4 @@
-// index.js
+// Implement Object Shorthand index.js
 const head   = require('./head');
 const middle = require('./middle');
 const assertArraysEqual = require('./assertArraysEqual');
@@ -28,3 +28,4 @@ module.exports = {
   takeUntil,
   without
 };
+
